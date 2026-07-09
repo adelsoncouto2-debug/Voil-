@@ -1,0 +1,25 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+}
+.carousel_main{
+    background-color: #ffd49b;
+    width: 90%;
+    height: 40%;
+    margin: 70px auto 0 auto; 
+    border-radius:21px;
+    padding-top: 30px;   
+    padding-left: 20px;
+    line-height: 1.2; 
+
+}
+
+.text_size_carousel{
+    color:#172e4d;
+    margin: 60px auto 0 auto;
+    font-size: 3rem;
+    display: block;
+
+}
