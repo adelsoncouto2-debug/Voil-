@@ -1,0 +1,74 @@
+.header {
+    height: 8vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.header-logo {
+    height: 80%;
+    margin-left: 2%;
+}
+.header-text {
+    display: flex;
+    margin-left: 2%;
+    gap: 30px;
+    align-items: center;
+}
+.vai-logo {
+    height: 60px;
+}
+.text {
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: normal;
+    color: #1e2d5b;
+}
+.text:hover{
+    color: #ff6200;
+}
+.text-selected {
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: normal;
+    color: #ff6200;
+    display: inline-block;
+    border-bottom: 2px solid #ff6200;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.vai-container {
+    position: relative;
+    width: 90px;
+    height: 60px;
+    cursor: pointer;
+}
+.vai-logo,
+.vai-selected {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity .4s cubic-bezier(.4,0,.2,1);
+}
+.vai-logo {
+    opacity: 1;
+}
+.vai-selected {
+    opacity: 0;
+}  
+.vai-container:hover .vai-logo {
+    opacity: 0;
+}
+.vai-container:hover .vai-selected {
+    opacity: 1;
+}
+.vai-container.active .vai-logo{
+    opacity: 0;
+}
+
+.vai-container.active .vai-selected{
+    opacity: 1;
+}
