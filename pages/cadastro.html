@@ -2,30 +2,24 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Cadastro - VAI</title>
-
+    <title>Cadastro</title>
     <link rel="stylesheet" href="../css/cadastro.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
     <header class="header">
-        <img class="logo" src="../img/header-logo.webp" alt="VAI">
-
+        <a href="./index.html">
+            <img class="logo" src="../img/header-logo.webp" alt="Voila">
+        </a>
         <div class="login-link">
             <span>Já possui uma conta?</span>
             <a href="#" id="open-login">Entrar</a>
         </div>
     </header>
-
     <main class="cadastro">
-
         <h1>Crie sua conta</h1>
-
         <p class="subtitle">
             Viaje com ofertas exclusivas e acompanhe todas as suas reservas.
         </p>
@@ -88,7 +82,7 @@
                 </div>
             </div>
             <label class="checkbox">
-                <input type="checkbox">
+                <input type="checkbox" id="termos">
                 Concordo com os Termos de Uso e Política de Privacidade
             </label>
             <button class="criar-conta">
@@ -114,9 +108,9 @@
             <p class="login-modal-subtitle">
                 Continue para acessar sua conta.
             </p>
-            <input type="email" class="login-input" placeholder="E-mail" id="email">
+            <input type="email" class="login-input" placeholder="E-mail" id="login-email">
             <div class="password-container">
-                <input id="password" type="password" class="login-input" placeholder="Senha">
+                <input id="login-password" type="password" class="login-input" placeholder="Senha">
                         <img src="../img/eye.svg" class="eye-icon" alt="Mostrar senha">
             </div>
             <a href="#" class="forgot-password">
@@ -124,6 +118,23 @@
             </a>
             <button class="login-button">
                 Entrar
+            </button>
+        </div>
+    </div>
+    <div class="forgot-modal">
+        <div class="login-modal-box">
+            <button class="forgot-close login-close">
+                ✕
+            </button>
+            <h2 class="login-modal-title">
+                Recuperar senha
+            </h2>
+            <p class="login-modal-subtitle">
+                Digite seu e-mail para receber as instruções de redefinição.
+            </p>
+            <input type="email" class="login-input" placeholder="E-mail">
+            <button class="login-button">
+                Enviar link
             </button>
         </div>
     </div>

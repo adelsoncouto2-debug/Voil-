@@ -19,6 +19,7 @@ body{
 }
 .logo{
     height:65px;
+    cursor: pointer;
 }
 .login-link{
     display:flex;
@@ -285,4 +286,10 @@ form{
 }
 .login-button:hover {
     background: #17254b;
+}
+.input-error{
+    border:2px solid #e53935 !important;
+}
+.input-success{
+    border:2px solid #43a047 !important;
 }
